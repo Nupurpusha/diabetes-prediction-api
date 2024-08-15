@@ -1,2 +1,2 @@
-# diabetes-prediction-api
+# Diabetes-Prediction-API
 diabetes-prediction-api
