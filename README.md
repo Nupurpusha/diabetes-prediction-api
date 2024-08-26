@@ -31,6 +31,7 @@ To set up the application locally, follow these steps:
 <p><img align="left" src="https://github.com/Nupurpusha/diabetes-prediction-api/blob/main/carbon (7).png" style="width: 300px; height: 150px;">
 </p>
 
+---
 ## 🔧Parameters
 * Pregnancies: int
 * Glucose: int
