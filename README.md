@@ -17,8 +17,15 @@ To run this application, you'll need to install the following dependencies, as m
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-green)](https://scikit-learn.org/)
 [![numpy](https://img.shields.io/badge/numpy-1.25.0-orange)](https://numpy.org/)
 [![pydantic](https://img.shields.io/badge/pydantic-1.11.1-blue)](https://pydantic-docs.helpmanual.io/)
+
+You can install these dependencies using pip:
+
+```bash
+pip install -r requirements.txt
+```
   
 ---
+
 ## Parameters
 * Pregnancies: int
 * Glucose: int
