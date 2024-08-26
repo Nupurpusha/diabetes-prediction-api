@@ -13,11 +13,10 @@ This FastAPI application is a machine learning model deployment project. The API
 ## Requirements
 To run this application, you'll need to install the following dependencies, as mentioned in requirements.txt:
 
-* fastapi
-* scikit-learn
-* numpy
-* pydantic
-* uvicorn
+[![fastapi](https://img.shields.io/badge/fastapi-0.95.1-blue)](https://fastapi.tiangolo.com/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-green)](https://scikit-learn.org/)
+[![numpy](https://img.shields.io/badge/numpy-1.25.0-orange)](https://numpy.org/)
+[![pydantic](https://img.shields.io/badge/pydantic-1.11.1-blue)](https://pydantic-docs.helpmanual.io/)
   
 ---
 ## Parameters
