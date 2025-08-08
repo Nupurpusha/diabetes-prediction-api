@@ -4,6 +4,7 @@ import pickle
 import numpy as np
 import sklearn
 from typing import Optional
+import os
 
 app = FastAPI()
 
@@ -16,7 +17,7 @@ class Item(BaseModel):
 
 # Example of a GET request endpoint
 @app.get("/items/{item_id}", response_model=Item)
-async def get_item(item_igcvggvvgd: int = Path(..., title="The ID of the item to get"), q: Optional[str] = None):
+async def get_item(item_id: int = Path(..., title="The ID of the item to get"), q: Optional[str] = None):
     """
     GET endpoint to retrieve an item by its ID.
     - item_id: The ID of the item (path parameter)
@@ -99,35 +100,38 @@ async def search_items(query: str, limit: int = 10, offset: int = 0):
     """
     return {"query": query, "limit": limit, "offset": offset, "results": ["item1", "item2"]}
 
-# To run the FastAPI app, use the command: uvicorn script_name:app --reload
-
+# Predict diabetes endpoint
 @app.post("/predict_diabetes/")
-async def predict_diabetes(Pregnancies:int, Glucose:int, BloodPressure:int, SkinThickness:int, Insulin:int, BMI:float, DiabetesPedigreeFunction:float, Age:int):
+async def predict_diabetes(
+    Pregnancies: int,
+    Glucose: int,
+    BloodPressure: int,
+    SkinThickness: int,
+    Insulin: int,
+    BMI: float,
+    DiabetesPedigreeFunction: float,
+    Age: int
+):
     """
     Predict diabetes based on input features using a pre-trained Random Forest classifier.
-
-    Parameters:
-    Pregnancies (int): Number of pregnancies
-    Glucose (float): Glucose level
-    BloodPressure (float): Blood pressure level
-    SkinThickness (float): Skin thickness
-    Insulin (float): Insulin level
-    BMI (float): Body Mass Index
-    DiabetesPedigreeFunction (float): Diabetes pedigree function
-    Age (int): Age in years
-    model_path (str): Path to the pickle file containing the trained model
-
-    Returns:
-    int: Predicted class (0 or 1)
     """
-    # Load the Random Forest classifier from the pickle file
-    with open('/Users/aadilgarg/Downloads/TSS-FastAPI/ThaparSummerSchool2024/FastAPI/diabetes_model.pkl', 'rb') as file:
-        rf_classifier = pickle.load(file)
-    
-    # Create a numpy array from the input features
-    input_features = np.array([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]])
 
-    # Make a prediction using the Random Forest classifier
+    # Dynamically get the path of the model in the same directory as this script
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(BASE_DIR, "diabetes_model.pkl")
+
+    # Load the Random Forest classifier
+    with open(model_path, "rb") as file:
+        rf_classifier = pickle.load(file)
+
+    # Prepare input features for prediction
+    input_features = np.array([[Pregnancies, Glucose, BloodPressure, SkinThickness,
+                                 Insulin, BMI, DiabetesPedigreeFunction, Age]])
+
+    # Make prediction
     prediction = rf_classifier.predict(input_features)
 
-    return int(prediction[0])
+    return {"prediction": int(prediction[0])}
+
+# To run the FastAPI app:
+# uvicorn script_name:app --reload
