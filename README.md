@@ -16,20 +16,17 @@ Built with **FastAPI**, **scikit-learn**, and **Streamlit**.
 - **Lightweight & easy deployment**
 
 ---
-## 📜 Overview
-This FastAPI application is a machine learning model deployment project. The API provides an endpoint to predict diabetes based on input features such as Pregnancies, Glucose level, Blood Pressure, Skin Thickness, Insulin level, BMI, Diabetes Pedigree Function, and Age. The model utilized is a pre-trained Random Forest classifier stored in a pickle file.
-
----
 
 ## ⚙️ Requirements
 To run this application, you'll need to install the following dependencies, as mentioned in `requirements.txt`:
 
-[![fastapi](https://img.shields.io/badge/fastapi-0.95.1-blue)](https://fastapi.tiangolo.com/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-green)](https://scikit-learn.org/)
-[![numpy](https://img.shields.io/badge/numpy-1.25.0-orange)](https://numpy.org/)
-[![pydantic](https://img.shields.io/badge/pydantic-1.11.1-blue)](https://pydantic-docs.helpmanual.io/)
+[![fastapi](https://img.shields.io/badge/fastapi-0.95.1-blue)](https://fastapi.tiangolo.com/)  
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-green)](https://scikit-learn.org/)  
+[![numpy](https://img.shields.io/badge/numpy-1.25.0-orange)](https://numpy.org/)  
+[![pydantic](https://img.shields.io/badge/pydantic-1.11.1-blue)](https://pydantic-docs.helpmanual.io/)  
+[![streamlit](https://img.shields.io/badge/streamlit-1.25.0-ff4b4b)](https://streamlit.io/)  
 
-You can install these dependencies using pip:
+Install these dependencies using pip:
 
 ```bash
 pip install -r requirements.txt
