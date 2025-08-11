@@ -33,13 +33,15 @@ pip install -r requirements.txt
 ```
 ---
 
-## Installation
+## 🚀 Installation
 To set up the application locally, follow these steps:
 
-<p><img align="center" src="https://github.com/Nupurpusha/diabetes-prediction-api/blob/main/carbon.png" style="width: 800px; height: 400px;">
+<p>
+  <img align="center" src="https://github.com/Nupurpusha/diabetes-prediction-api/blob/main/carbon.png" style="width: 800px; height: 400px;">
 </p>
 
-To access the API, Open your web browser and go to http://localhost:8000/docs to view the interactive API documentation provided by FastAPI.
+You can also access the deployed application directly here:  
+🔗 **[Live Demo](https://diabetes-prediction-api-9baappmedycmkonaqnxcmtw.streamlit.app/)**
 
 ---
 ## 🔧Parameters
@@ -54,8 +56,8 @@ To access the API, Open your web browser and go to http://localhost:8000/docs to
 
   
 ---
-## 🙏Acknowledgements
-Special thanks to the creators of FastAPI and Scikit-learn for providing powerful tools to deploy and use machine learning models effectively.
+## 🙏 Acknowledgements
+Special thanks to the creators of **FastAPI**, **Streamlit**, and **Scikit-learn** for providing powerful frameworks and tools that make building and deploying interactive machine learning applications seamless and efficient.
 
 ---
 
