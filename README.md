@@ -37,7 +37,7 @@ pip install -r requirements.txt
 To set up the application locally, follow these steps:
 
 <p>
-  <img align="center" src="https://github.com/Nupurpusha/diabetes-prediction-api/blob/main/carbon.png" style="width: 800px; height: 400px;">
+  <img align="center" src="https://github.com/Nupurpusha/diabetes-prediction-api/blob/main/carbon.png" style="width: 700px; height: 500px;">
 </p>
 
 You can also access the deployed application directly here:  
