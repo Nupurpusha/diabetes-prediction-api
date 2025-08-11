@@ -1,10 +1,21 @@
-# Diabetes-Prediction-API
+# 🩺 Diabetes Prediction API
+
+A machine learning-powered API and Streamlit app for predicting the likelihood of diabetes based on patient health metrics.  
+Built with **FastAPI**, **scikit-learn**, and **Streamlit**.
 
 <img width="1505" height="870" alt="image" src="https://github.com/user-attachments/assets/beed27f0-4e2c-4f38-bec2-e35844c82cf5" />
 
 
 ---
 
+## 📌 Features
+- **REST API** for diabetes prediction
+- **Streamlit UI** for easy interaction
+- **Machine Learning Model** trained on the PIMA Diabetes Dataset
+- **FastAPI Docs** available at `/docs`
+- **Lightweight & easy deployment**
+
+---
 ## 📜 Overview
 This FastAPI application is a machine learning model deployment project. The API provides an endpoint to predict diabetes based on input features such as Pregnancies, Glucose level, Blood Pressure, Skin Thickness, Insulin level, BMI, Diabetes Pedigree Function, and Age. The model utilized is a pre-trained Random Forest classifier stored in a pickle file.
 
