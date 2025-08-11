@@ -43,6 +43,7 @@ To set up the application locally, follow these steps:
 You can also access the deployed application directly here:  
 🔗 **[Live Demo](https://diabetes-prediction-api-9baappmedycmkonaqnxcmtw.streamlit.app/)**
 
+
 ---
 ## 🔧Parameters
 * Pregnancies: int
