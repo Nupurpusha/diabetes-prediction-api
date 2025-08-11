@@ -1,7 +1,8 @@
 # Diabetes-Prediction-API
 
 ![image](https://github.com/user-attachments/assets/86df3d9f-1e99-41f2-8be7-6f7de1531c73)
-![image](https://github.com/user-attachments/assets/63bd6141-e3f6-4460-b4c1-d53e436db11d)
+<img width="1505" height="870" alt="image" src="https://github.com/user-attachments/assets/beed27f0-4e2c-4f38-bec2-e35844c82cf5" />
+
 
 ---
 
