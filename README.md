@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ## Installation
 To set up the application locally, follow these steps:
 
-<p><img align="center" src="https://github.com/Nupurpusha/diabetes-prediction-api/blob/main/carbon.png" style="width: 600px; height: 400px;">
+<p><img align="center" src="https://github.com/Nupurpusha/diabetes-prediction-api/blob/main/carbon.png" style="width: 1000px; height: 400px;">
 </p>
 
 To access the API, Open your web browser and go to http://localhost:8000/docs to view the interactive API documentation provided by FastAPI.
